@@ -25,7 +25,7 @@ public class AreaDaoTest {
     private AreaDao areaDao;
 
     @Test
-    @Ignore
+    //@Ignore
     public void queryArea() throws Exception {
         List<Area> areaList = areaDao.queryArea();
         assertEquals(2,areaList.size());
@@ -60,6 +60,7 @@ public class AreaDaoTest {
     }
 
     @Test
+    @Ignore
     public void deleteArea() throws Exception {
         int effectNum = areaDao.deleteArea(3);
         assertEquals(1,effectNum);
